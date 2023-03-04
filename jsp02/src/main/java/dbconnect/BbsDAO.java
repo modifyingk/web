@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class BbsDAO {
-	String url = "jdbc:mysql://localhost:포트번호/db";
+	String url = "jdbc:mysql://localhost:포트번호/db명";
 	String user = "유저";
 	String password = "비밀번호";
 	Connection conn;
