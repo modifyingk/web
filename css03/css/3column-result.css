@@ -1,0 +1,38 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+#container {
+  width: 1200px;
+  margin: 20px auto;
+}
+#header {
+  background: lightpink;
+  width: 100%;
+  height: 120px;
+}
+#left-sidebar {
+  background: lightblue;
+  width: 250px;
+  height: 600px;
+  float: left;
+}
+#contents {
+  background: lightyellow;
+  width: 800px;
+  height: 600px;
+  float: left;
+}
+#right-sidebar {
+  background: lightblue;
+  width: 150px;
+  height: 600px;
+  float: right;
+}
+#footer {
+  width: 100%;
+  background: lightpink;
+  height: 100px;
+  clear: left;
+}
