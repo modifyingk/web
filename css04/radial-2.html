@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+			width:300px;
+			height:200px;
+			margin:10px;
+            float: left;
+            color: white;
+            text-align: center;
+		}
+        .grad1 {
+            background: radial-gradient(closest-side, yellow, green);
+        }
+        .grad2 {
+            background: radial-gradient(circle closest-side, yellow, green);
+        }
+        .grad3 {
+            background: radial-gradient(closest-corner, yellow, green);
+        }
+        .grad4 {
+            background: radial-gradient(circle closest-corner, yellow, green);
+        }
+        .grad5 {
+            background: radial-gradient(farthest-side, yellow, green);
+        }
+        .grad6 {
+            background: radial-gradient(circle farthest-side, yellow, green);
+        }
+        .grad7 {
+            background: radial-gradient(farthest-corner, yellow, green);
+        }
+        .grad8 {
+            background: radial-gradient(circle farthest-corner, yellow, green);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad1"><h2>closest-side</h2></div>
+    <div class="grad2"><h2>closest-side (circle)</h2></div>
+    <div class="grad3"><h2>closest-corner</h2></div>
+    <div class="grad4"><h2>closest-corner (circle)</h2></div>
+    <div class="grad5"><h2>farthest-side</h2></div>
+    <div class="grad6"><h2>farthest-side (circle)</h2></div>
+    <div class="grad7"><h2>farthest-corner</h2></div>
+    <div class="grad8"><h2>farthest-corner (circle)</h2></div>
+</body>
+</html>
