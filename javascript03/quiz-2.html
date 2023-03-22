@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 200px;
+            margin: 50px auto;
+        }
+        button {
+            border: 1px solid #ccc;
+            background: #fff;
+            padding: 20px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="bttn">현재 시간 보기</button>
+    </div>
+
+    <script>
+        document.getElementById('bttn').onclick = displayTime;
+
+        function displayTime() {
+            var w = 400;
+            var h = 200;
+            
+            var left = (screen.availWidth - w) / 2;
+            var top = (screen.availHeight - h) / 2;
+            var opt = "left=" + left + ",top=" + top + ",width=" + w + ",height=" + h;
+
+            window.open("quiz-1.html", "current", opt);
+        }
+    </script>
+</body>
+</html>

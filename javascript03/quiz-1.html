@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        p {
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .display {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>현재 시각 <span id="current" class="display"></span></p>
+    <script>
+        setInterval(displayNow, 1000);
+
+        function displayNow() {
+            var date = new Date();
+            var currentTime = date.toLocaleTimeString();
+            document.querySelector("#current").innerHTML = currentTime;
+        }
+    </script>
+</body>
+</html>

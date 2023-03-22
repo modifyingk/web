@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/easys-1.jpg" id="cover">
+
+	<script>
+		var cover = document.getElementById("cover");
+		cover.addEventListener("mouseover", function() {
+			cover.src = "images/easys-2.jpg";
+		});
+		cover.addEventListener("mouseout", function() {
+			cover.src = "images/easys-1.jpg";
+		});
+	</script>
+</body>
+</html>

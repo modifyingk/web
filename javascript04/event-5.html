@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/easys-1.jpg" id="cover">
+
+	<script>
+		var cover = document.getElementById("cover");
+		cover.addEventListener("mouseover", chagePic);
+		cover.addEventListener("mouseout", originPic);
+
+		function chagePic() {
+			cover.src = "images/easys-2.jpg";
+		}
+		function originPic() {
+			cover.src = "images/easys-1.jpg";
+		}
+	</script>
+</body>
+</html>

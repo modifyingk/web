@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/nodelist.css">
+</head>
+<body>
+	<div id="container">
+		<h1>Web Programming</h1>
+		<p>공부할 주제를 기록해 보세요</p>
+		<form action="">
+			<input type="text" id="subject" autofocus>
+			<button onclick="newRegister(); return false;">추가</button>
+		</form>
+		<hr>
+		<ul id="itemList"></ul>
+	</div>
+
+	<script>
+		function newRegister() {
+			var liNode = document.createElement("li");
+			var subject = document.getElementById("subject");
+			var txtNode = document.createTextNode(subject.value);
+	
+			var itemList = document.getElementById("itemList");
+			liNode.appendChild(txtNode);
+			itemList.appendChild(liNode);
+		}
+	</script>
+</body>
+</html>
